@@ -123,3 +123,7 @@ INSTALLED_APPS = (
     'sekizai',
     'gunicorn',
 )
+
+SOUTH_DATABASE_ADAPTERS = {
+    'default': "south.db.postgresql_psycopg2"
+}
