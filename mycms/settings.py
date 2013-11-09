@@ -160,11 +160,11 @@ LOGGING = {
             'class': 'logging.StreamHandler',
             'formatter': 'simple'
         },
-        'mail_admins': {
-            'level': 'ERROR',
-            'class': 'django.utils.log.AdminEmailHandler',
-            'filters': ['special']
-        }
+        #'mail_admins': {
+        #    'level': 'ERROR',
+        #    'class': 'django.utils.log.AdminEmailHandler',
+        #    'filters': ['special']
+        #}
     },
     'loggers': {
         'django': {
@@ -172,15 +172,15 @@ LOGGING = {
             'propagate': True,
             'level': 'INFO',
         },
-        'django.request': {
-            'handlers': ['mail_admins'],
-            'level': 'ERROR',
-            'propagate': False,
-        },
-        'mycms.custom': {
-            'handlers': ['console', 'mail_admins'],
-            'level': 'INFO',
-            'filters': ['special']
-        }
+        #'django.request': {
+        #    'handlers': ['mail_admins'],
+        #    'level': 'ERROR',
+        #    'propagate': False,
+        #},
+        #'mycms.custom': {
+        #    'handlers': ['console', 'mail_admins'],
+        #    'level': 'INFO',
+        #    'filters': ['special']
+        #}
     }
 }
